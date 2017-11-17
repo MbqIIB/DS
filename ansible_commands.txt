@@ -1,0 +1,161 @@
+ ansible
+ cd /etc/ansible/
+ less ansible.cfg
+ 
+ansible spare -a "df -h"
+
+ history | grep ansible
+
+ ansible spare -m shell  -a "ps -ef| grep httpd"
+
+ ansible spare -a "ps -ef| grep httpd"
+
+ ansible spare -m copy  -a "ps -ef| grep httpd"
+
+ history | grep ansible
+
+ ansible multi_prod -m copy -a "src=paymentsepdqcouk.crt dest=/tmp"
+
+ cd /etc/ansible/
+
+ ansible spare -a "ps -ef | grep was | grep J6"
+
+ ansible spare -m shell -a "ps -ef | grep was | grep J6"
+
+ ansible b2b -m shell -a "ps -ef | grep was | grep J6"
+
+ ansible msi -m shell -a "ps -ef | grep was | grep J6"
+
+ cd /etc/ansible/
+
+ ansible-playbook spare NTP_install.yml
+
+ history | grep ansible-playbook
+
+ ansible-playbook  NTP_install.yml
+
+ ansible --version
+
+ cd /etc/ansible/
+
+ less ansible.cfg
+
+ ansible spare -a uptime
+
+ man ansible
+
+ ansible sp
+
+ ansible 10.100.1.80 -m command -a uptime
+
+ vi ansible_host
+
+ ansible --help
+
+ ansible -i /root/test/ansible_host -m command -a uptime
+
+ cat /root/test/ansible_host
+
+ cd /etc/ansible/
+
+ ansible 10.100.1.64 -a uptime
+
+ ansible -i /root/test/ansible_host  -a uptime
+
+ ansible -i /root/test/ansible_host 10.100.1.80 -a uptime
+
+ ansible -i /root/test/ansible_host 10.100.1.80 -m script /root/ebzsupport/LI_num_check.sh
+
+ ansible -i /root/test/ansible_host 10.100.1.80 -m script -a /root/ebzsupport/LI_num_check.sh
+
+ ansible -i /root/test/ansible_host 10.100.1.80 -m script -a /root/test/uptime.sh
+
+ cd /etc/ansible/
+
+ history | grep ansible
+
+ cd /etc/ansible/
+
+ ansible spare ping
+
+ ansible spare -a ping
+
+ ansible spare -a "ping"
+
+ ansible spare -m ping
+
+ ansible spare -m -a "df -h"
+
+ ansible spare  -a "df -h"
+
+ ansible-galaxy
+
+ ansible-galaxy --version
+
+ ansible spare -m ping
+
+ cd ansible/
+
+ cat ansible.cfg
+
+ ansible-playbook abrt.yml
+
+ ansible spare -m ping
+
+ ansible spare -a "df -h"
+
+ cd ansible/
+
+ ansible spare -a "hostname"
+
+ ansible spare -m ping
+
+ ansible b2b -a "hostname"
+
+ ansible spare -a "hostname"
+
+ ansible spare -a "free -m"
+
+ ansible spare -a "date"
+
+ ansible spare -m setup --limit 10.100.1.64
+
+ ansible spare -m service "name=ntpd state=started" --limit 10.100.1.64
+
+ ansible spare -m service -a "name=ntpd state=started" --limit 10.100.1.64
+
+ ansible spare -m fetch -a "src=/etc/hosts dest=/tmp"
+
+ ansible spare -m shell -a "tail -200 /var/messages" --limit 10.100.1.64
+
+ ansible spare -m shell -a "tail -200 /var/logs/messages" --limit 10.100.1.64
+
+ ansible spare -m shell -a "tail -200 /var/log/messages" --limit 10.100.1.64
+
+ ansible spare -m shell -a "tail -50 /var/log/messages" --limit 10.100.1.64
+
+ ansible spare -m shell -a "tail -50 /var/log/messages | wc -l" --limit 10.100.1.64
+
+ cd /etc/ansible/
+
+ cat /etc/ansible/hosts
+
+ vi /etc/ansible/hosts
+
+ ansible-playbook snmp.yml
+
+ vi /etc/ansible/hosts
+
+ ansible-playbook snmp.yml
+
+ history | grep ansible
+
+  ansible spare  -a "df -h"
+
+  vi /etc/ansible/hosts
+
+ history | grep ansible
+
+  vi /etc/ansible/hosts
+
+ ansible spare -m ping
